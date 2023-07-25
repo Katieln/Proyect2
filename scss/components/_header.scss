@@ -15,12 +15,17 @@ header{
   
  
     .logo{
-        transition: all 4s;
-        h1{
+        background-color: rgba(216, 194, 252, 0.78);
+        padding: 20px;
+
+     
+           h1{
             @include letra(rgb(139, 6, 255),3px 3px 6px blueviolet,'dancing script',40px)
         }
-        background-color: rgba(207, 194, 252, 0.812);
-        padding: 20px;
+        &:hover{transition: all 2s;
+     transform: skewY(3deg);
+        background-color: rgba(194, 228, 252, 0.812);
+        padding: 20px;}
         border-radius: 20px;
         gap: 10px;
         @include flexbox(column,space-around,center);
@@ -31,13 +36,14 @@ header{
 }
 
 nav{
- 
+    background-color: #4377dfa5;
+     
     ul{
-        transition: all 5s;
-        background-color: #b2cbfda5;
+        &:hover{transition: all 1s;
+        background-color: #6b65dea5;
         list-style: none;
       padding: 10px;
-      border-radius: 10px;
+      border-radius: 10px;}
       
     
        

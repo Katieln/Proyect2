@@ -23,8 +23,7 @@ header {
   align-items: center;
 }
 header .logo {
-  transition: all 4s;
-  background-color: rgba(207, 194, 252, 0.812);
+  background-color: rgba(216, 194, 252, 0.78);
   padding: 20px;
   border-radius: 20px;
   gap: 10px;
@@ -39,14 +38,23 @@ header .logo h1 {
   font-family: "dancing script";
   font-size: 40px;
 }
+header .logo:hover {
+  transition: all 2s;
+  transform: skewY(3deg);
+  background-color: rgba(194, 228, 252, 0.812);
+  padding: 20px;
+}
 header .logo-img {
   border-radius: 40px;
   height: 200px;
 }
 
-nav ul {
-  transition: all 5s;
-  background-color: rgba(178, 203, 253, 0.6470588235);
+nav {
+  background-color: rgba(67, 119, 223, 0.6470588235);
+}
+nav ul:hover {
+  transition: all 1s;
+  background-color: rgba(107, 101, 222, 0.6470588235);
   list-style: none;
   padding: 10px;
   border-radius: 10px;
