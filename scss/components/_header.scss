@@ -66,7 +66,9 @@ nav{
 }
 
 @media(min-width:480px){
-    header{background-color: rgba(188, 197, 255, 0.392);
+    header{
+        transition: all 4s;
+        background-color: rgba(188, 197, 255, 0.392);
         @include flexbox(row, space-around, center);
    
     }
