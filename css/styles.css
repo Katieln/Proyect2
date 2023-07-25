@@ -278,11 +278,13 @@ aside .blog {
 
 * {
   box-sizing: border-box;
+  align: center;
 }
 
 .container-pr {
   max-width: 100%;
-  background-color: rgba(125, 227, 238, 0.496);
+  object-fit: contain;
+  background-color: rgba(125, 198, 238, 0.298);
 }
 .container-pr .row-pr {
   display: flex;
@@ -291,6 +293,7 @@ aside .blog {
   align-items: center;
   gap: 10px;
   width: 100%;
+  object-fit: contain;
 }
 .container-pr .card-pr {
   display: flex;
@@ -300,6 +303,7 @@ aside .blog {
   width: 300px;
   border: 10px solid rgba(167, 208, 225, 0.473);
   background-color: rgba(85, 0, 255, 0.199);
+  object-fit: contain;
 }
 .container-pr .card-img-pr {
   height: 40%;
@@ -312,27 +316,57 @@ aside .blog {
   margin: 10px;
 }
 
-.catalogo {
-  background-color: "red";
-  width: 100%;
+.container-ct {
+  background-color: rgba(0, 89, 255, 0.214);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 3px 3px 3px red;
+  width: 100%;
 }
-.catalogo table {
-  max-width: 100%;
+.container-ct table {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 3px 3px 3px red;
+  margin: 30px;
+  width: 100%;
+}
+.container-ct tr {
+  width: 80%;
+  background-color: rgba(108, 232, 220, 0.521);
+  padding: 10px;
+  margin: 20px;
+  gap: 10px;
+  border: 3px 3px 3px red;
+}
+.container-ct tr th {
+  padding: 5px;
+  border: 3px 3px 3px red;
+  width: 80%;
+}
+.container-ct tr td {
+  background-color: rgba(81, 112, 221, 0.302);
+  margin: 10px;
+  padding: 10px;
+  border: 2px 2px 3px black;
+  width: 80%;
 }
 
 .gps {
-  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.gps-img {
+  margin: 20px;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 1024px) {
   .vestidos {
     width: 100%;
   }
@@ -344,7 +378,7 @@ aside .blog {
     align-items: stretch;
   }
   .vestidos .container-pr .row-pr {
-    background-color: rgba(188, 255, 237, 0.392);
+    background-color: rgba(255, 188, 188, 0.611);
     width: 100%;
     display: flex;
     flex-direction: row;

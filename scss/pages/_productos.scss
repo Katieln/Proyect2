@@ -1,13 +1,17 @@
-*{box-sizing: border-box;}
+*{box-sizing: border-box;
+align:center;}
 
 .container-pr{
     max-width: 100%;
-     
-    background-color: rgba(125, 227, 238, 0.496);
+     object-fit: contain;
+    background-color: rgba(125, 198, 238, 0.298);
+  
     .row-pr{
     @include flexbox (column, space-around,center);
     gap: 10px;
     width: 100%;
+    object-fit: contain;
+ 
        
 }
     .card-pr{
@@ -15,6 +19,8 @@
        width: 300px;
         border: 10px solid rgba(167, 208, 225, 0.473);
         background-color: rgba(85, 0, 255, 0.199);
+        object-fit: contain;
+ 
     
     }
 .card-img-pr{
@@ -30,27 +36,62 @@
   
 }}
 
-.catalogo{
-    background-color:"red";
+.container-ct{
+      background-color: rgba(0, 89, 255, 0.214);
+  
+    @include flexbox(column,center, center);
+    border: 3px 3px 3px red;
     width: 100%;
-     @include flexbox(column, center, center);
-     table{
-        max-width: 100%;
-         @include flexbox(row,center,center);
-     }
- }
-
-.gps{
-    width:200px;
+ 
+    table{
+       
+        @include flexbox(column,center, center);
+        border: 3px 3px 3px red;
+     margin: 30px;
+       width: 100%;
+       
+  
+    }
+    tr{
+        width: 80%;
+        background-color: rgba(108, 232, 220, 0.521);
+        padding: 10px;
+        margin: 20px;
+        gap: 10px;
+        border: 3px 3px 3px red;
+ 
+         th{
+            padding: 5px;
+            border: 3px 3px 3px red;
+            width: 80%;
+            
+        }
+        td{
+            background-color: rgba(81, 112, 221, 0.302);
+            margin: 10px;
+            padding: 10px;
+            border: 2px 2px 3px black;
+            width: 80%;
+        }
+    }
 }
 
-@media(min-width:480px){
+
+.gps{
+    @include flexbox(column,center,center);
+    width:100%;
+    &-img{
+    margin: 20px;
+}
+}
+
+@media(min-width:1024px){
     .vestidos{
         width: 100%;
    .container-pr{
     max-width: 100%;
     @include flexbox(row, space-around, stretch);
-    .row-pr{background-color: rgba(188, 255, 237, 0.392);
+    .row-pr{background-color: rgba(255, 188, 188, 0.611);
         width: 100%;
         @include flexbox(row, space-around, center);
         .card-pr{
