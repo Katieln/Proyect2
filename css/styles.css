@@ -447,8 +447,11 @@ aside .blog {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 255, 255, 0.439);
-  padding: 30px;
+  padding: 20px;
   gap: 30px;
+}
+.auto-img {
+  width: 100%;
 }
 
 .pelis {
@@ -457,7 +460,10 @@ aside .blog {
   justify-content: center;
   align-items: center;
   background-color: rgba(250, 235, 215, 0.509);
-  padding: 40px;
+  padding: 20px;
+}
+.pelis-img {
+  width: 100%;
 }
 
 .contacto {
