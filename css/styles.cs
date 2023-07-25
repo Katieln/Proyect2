@@ -258,6 +258,7 @@ footer .redes h4 {
 .text-home {
   background-color: rgba(132, 156, 243, 0.425);
   padding: 15px;
+  transform: skewY(5deg);
 }
 .text-home h2 {
   background-color: rgba(0, 255, 255, 0.4);
