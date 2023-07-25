@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGxheWFzfGVufDB8fDB8fHww&w=1000&q=80);
+}
+
+
+
+$c-blanco: white;
+$c-gris:grey;
+
+@mixin structure($padding, $margin) {
+   
+    padding: $padding;
+    margin: $margin;
+}
+
+@mixin flexbox($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin letra ($color, $shadow, $estilo, $fontsize){
+    color: $color;
+    text-shadow: $shadow;
+    font-family: $estilo;
+    font-size: $fontsize;
+}
+
+@mixin caja ($border, $padding, $bgcolor) {
+    border: $border;
+    padding: $padding;
+    background-color: $bgcolor;
+}

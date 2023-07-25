@@ -1,0 +1,23 @@
+
+
+.text-home{
+    background-color: rgba(132, 156, 243, 0.425);
+     padding: 15px;
+     h2{
+        background-color: rgba(0, 255, 255, 0.4);
+     }
+     p{
+        background-color: rgba(0, 170, 255, 0.625)
+     }
+    
+}
+
+aside{
+    background-color: rgba(172, 205, 249, 0.835);
+      @include structure(10px, 10px);
+    margin-bottom: 58px;
+  .blog{
+    margin: 15px;
+  }
+   
+}
