@@ -30,11 +30,12 @@ header{
 }
 
 nav{
-
+   
     ul{background-color: #b2cbfda5;
         list-style: none;
       padding: 10px;
       border-radius: 10px;
+      
     
        
         li{ background-color: rgba(243, 254, 255, 0.487);
@@ -48,11 +49,12 @@ nav{
                 @include flexbox(column , center, center);
        
                 text-decoration: none;
-               @include letra (black,3px 3px 3px white,'indie flower',30px);
+
+               @include letra (black,3px 3px 3px white,'indie flower',25px);
                 &:hover{
                     color: rgb(157, 0, 255);
                     text-shadow: 2px 2px 4px rgb(92, 92, 171);
-                    font-size: 25px;
+                    font-size: 30px;
                 }
             }
 
