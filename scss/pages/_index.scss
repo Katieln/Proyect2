@@ -3,7 +3,8 @@
 .text-home{
     background-color: rgba(132, 156, 243, 0.425);
      padding: 15px;
-     transform: skewY(5deg);
+     &:hover{transform: skewY(5deg);
+      transition: all 2s;}
      h2{
         background-color: rgba(0, 255, 255, 0.4);
      }

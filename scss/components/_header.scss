@@ -15,6 +15,7 @@ header{
   
  
     .logo{
+        transition: all 4s;
         h1{
             @include letra(rgb(139, 6, 255),3px 3px 6px blueviolet,'dancing script',40px)
         }
@@ -30,8 +31,10 @@ header{
 }
 
 nav{
-   
-    ul{background-color: #b2cbfda5;
+ 
+    ul{
+        transition: all 5s;
+        background-color: #b2cbfda5;
         list-style: none;
       padding: 10px;
       border-radius: 10px;
