@@ -1,11 +1,11 @@
-section{background-color: rgba(225, 244, 253, 0.288);
+section{background-color: rgba(76, 152, 206, 0.203);
     padding: 5px;
     width: 100%;
    
 }
     .container{
         max-width: 100%;
-        background-color: rgba(162, 207, 255, 0.505);
+        background-color: rgba(162, 207, 255, 0.121);
         @include flexbox(row, space-around, stretch);
         padding: 10px;
         
