@@ -1,0 +1,17 @@
+.auto{
+    @include flexbox(column,center,center);
+
+background-color: rgba(0, 255, 255, 0.439);
+padding: 30px;
+gap: 30px;
+}
+
+.pelis{
+    @include flexbox(column,center,center);
+    background-color: rgba(250, 235, 215, 0.509);
+    padding: 40px;
+}
+
+.contacto{
+    margin-bottom: 70px;
+}

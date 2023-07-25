@@ -1,5 +1,5 @@
 .viajes-img{
-    height: 300px;
+   width: 90%;
     &-1{
        height: 500px;
     }
@@ -9,10 +9,40 @@
     background-color: rgba(0, 255, 255, 0.276);
     @include flexbox (column, center, center);
     text-align: center;
+    padding: 20px;
+    padding-left: 30px;
+
 }
+
 
 .box-viajes{
     background-color: rgba(89, 103, 232, 0.349);
     padding: 20px;
     margin: 20px;
 }
+
+.viajes-img-1{
+    width: 90%;
+    height: auto;
+}
+
+@media (min-width:1024px){
+    .viajes-img{
+      height: 400px;
+      width: auto;
+         &-1{
+            width: 30%;
+    height: auto;  }
+     }
+     .cont-viajes-1{
+        background-color: rgba(0, 255, 255, 0.276);
+        @include flexbox (row, space-around, center);
+        text-align: center;
+        padding: 20px;
+        padding-left: 30px;
+    }
+
+       
+        
+}
+

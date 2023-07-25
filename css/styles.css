@@ -393,7 +393,7 @@ aside .blog {
   }
 }
 .viajes-img {
-  height: 300px;
+  width: 90%;
 }
 .viajes-img-1 {
   height: 500px;
@@ -406,12 +406,62 @@ aside .blog {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 20px;
+  padding-left: 30px;
 }
 
 .box-viajes {
   background-color: rgba(89, 103, 232, 0.349);
   padding: 20px;
   margin: 20px;
+}
+
+.viajes-img-1 {
+  width: 90%;
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  .viajes-img {
+    height: 400px;
+    width: auto;
+  }
+  .viajes-img-1 {
+    width: 30%;
+    height: auto;
+  }
+  .cont-viajes-1 {
+    background-color: rgba(0, 255, 255, 0.276);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    padding-left: 30px;
+  }
+}
+.auto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 255, 255, 0.439);
+  padding: 30px;
+  gap: 30px;
+}
+
+.pelis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(250, 235, 215, 0.509);
+  padding: 40px;
+}
+
+.contacto {
+  margin-bottom: 70px;
 }
 
 /*# sourceMappingURL=styles.css.map */
