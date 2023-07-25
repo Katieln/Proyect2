@@ -100,10 +100,6 @@ section {
   background-color: rgba(225, 244, 253, 0.288);
   padding: 5px;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: stretch;
 }
 
 .container {
@@ -278,6 +274,90 @@ aside {
 }
 aside .blog {
   margin: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container-pr {
+  max-width: 100%;
+  background-color: rgba(125, 227, 238, 0.496);
+}
+.container-pr .row-pr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.container-pr .card-pr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 300px;
+  border: 10px solid rgba(167, 208, 225, 0.473);
+  background-color: rgba(85, 0, 255, 0.199);
+}
+.container-pr .card-img-pr {
+  height: 40%;
+  object-fit: contain;
+  margin: 10px;
+}
+.container-pr .card-img-pr-1 {
+  border-radius: 10px;
+  height: 80%;
+  margin: 10px;
+}
+
+.catalogo {
+  background-color: "red";
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.catalogo table {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.gps {
+  width: 200px;
+}
+
+@media (min-width: 480px) {
+  .vestidos {
+    width: 100%;
+  }
+  .vestidos .container-pr {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  .vestidos .container-pr .row-pr {
+    background-color: rgba(188, 255, 237, 0.392);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .vestidos .container-pr .row-pr .card-pr {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,8 +1,7 @@
 section{background-color: rgba(225, 244, 253, 0.288);
     padding: 5px;
     width: 100%;
-    @include flexbox(row, space-around, stretch);
- 
+   
 }
     .container{
         max-width: 100%;

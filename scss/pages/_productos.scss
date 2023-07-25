@@ -1,0 +1,65 @@
+*{box-sizing: border-box;}
+
+.container-pr{
+    max-width: 100%;
+     
+    background-color: rgba(125, 227, 238, 0.496);
+    .row-pr{
+    @include flexbox (column, space-around,center);
+    gap: 10px;
+    width: 100%;
+       
+}
+    .card-pr{
+        @include flexbox(column, space-around, stretch);
+       width: 300px;
+        border: 10px solid rgba(167, 208, 225, 0.473);
+        background-color: rgba(85, 0, 255, 0.199);
+    
+    }
+.card-img-pr{
+    height:40%;
+    object-fit: contain;
+    margin: 10px;
+
+    &-1{
+        border-radius: 10px;
+        height:80%;
+        margin: 10px;
+    }
+  
+}}
+
+.catalogo{
+    background-color:"red";
+    width: 100%;
+     @include flexbox(column, center, center);
+     table{
+        max-width: 100%;
+         @include flexbox(row,center,center);
+     }
+ }
+
+.gps{
+    width:200px;
+}
+
+@media(min-width:480px){
+    .vestidos{
+        width: 100%;
+   .container-pr{
+    max-width: 100%;
+    @include flexbox(row, space-around, stretch);
+    .row-pr{background-color: rgba(188, 255, 237, 0.392);
+        width: 100%;
+        @include flexbox(row, space-around, center);
+        .card-pr{
+            height: 350px;
+            @include flexbox(column, space-around, stretch);
+        
+        }
+   }
+    }
+}
+}
+
