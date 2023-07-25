@@ -1,0 +1,18 @@
+.viajes-img{
+    height: 300px;
+    &-1{
+       height: 500px;
+    }
+}
+
+.cont-viajes{
+    background-color: rgba(0, 255, 255, 0.276);
+    @include flexbox (column, center, center);
+    text-align: center;
+}
+
+.box-viajes{
+    background-color: rgba(89, 103, 232, 0.349);
+    padding: 20px;
+    margin: 20px;
+}
